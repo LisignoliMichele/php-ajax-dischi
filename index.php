@@ -1,3 +1,6 @@
+<?php
+include __DIR__ . '/database.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -12,7 +15,7 @@ include __DIR__ . '/partials/template/head.php';
    <div class="gallery">
    <?php
    include __DIR__ . '/partials/template/gallery_nav.php'; 
-   include __DIR__ . '/partials/template/dischi_OGGI.php';
+   include __DIR__ . '/partials/template/dischi_INPHP.php';
    ?> 
    </div>
    </main>
