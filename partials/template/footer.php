@@ -1,13 +1,12 @@
    <!-- footer -->
    <footer>
       <!-- footer left -->
-      <div class="left">
+      <div v-if="recently_played.length > 0" class="left">
         <div class="playing_album_photo">
-          <img src="img/lucio_dalla.jpg" alt="Grandissimo Lucio - a song for boolean">
+          <img :src="'img/' + recently_played[albumIndex].poster" alt="recently_played[albumIndex].author">
         </div>
         <div class="playing_album_text">
-          <h5>Lucio Dalla</h5>
-          <p>L'anno che verrà</p>
+          <h5>{{recently_played[albumIndex].author}}</h5>
         </div>
         <div class="playing_album_save">
           <ul class="list_none list_inline">
