@@ -1,6 +1,6 @@
        <!-- section recently played -->
        <section id="recently_played">
-          <h2>Recently played</h2>
+          <h2>recently played</h2>
           <div class="album_music">
          <?php foreach($dischi["Recently played"] as $disco) : ?>
           <a href="#" class="music">

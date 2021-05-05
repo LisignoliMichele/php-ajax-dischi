@@ -1,6 +1,6 @@
 <?php
 $dischi = [
-   "Recently played" => [
+   "recently_played" => [
       [
          "poster" => "AbbeyRoadTheBeatles.jpg",
          "title" => "Abbey Road - Life is what happens to you while you're busy making other plans.",
@@ -44,7 +44,7 @@ $dischi = [
          "year" => "2009",
       ]
    ],
-   "created for user" => [
+   "created_for_user" => [
       [
          "poster" => "radar.jpeg",
          "title" => "",
@@ -60,7 +60,7 @@ $dischi = [
          "year" => "",
       ],
    ],
-   "popolar artists" => [
+   "popolar_artists" => [
       [
          "poster" => "ninaSimone_sink&soul.jpg",
          "title" => "This is the world you have made yourself, now you have to live in it.",
