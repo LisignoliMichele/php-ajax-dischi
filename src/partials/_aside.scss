@@ -1,0 +1,96 @@
+/* aside menu */
+.menu{
+   display: flex;
+   flex-direction: column;
+   padding: 10px 25px;
+   overflow: hidden;
+ }
+ .menu li{
+   margin-bottom: 10px;
+ }
+ /* aside top */
+ .logo{
+   margin-bottom: 20px;
+ }
+ .logo img{
+   width: 100%;
+ }
+ .small-logo{
+   display: none;
+ }
+ .main_nav img,
+ .playlist_title img{
+   max-width: 30px;
+ }
+ .main_nav img,
+ .playlist_title img,
+ .user img{
+   margin-right: 10px;
+ }
+ .playlist_title{
+   margin-top: 20px;
+ }
+ .new-playlist{
+   margin: 15px 0;
+ }
+ .new-playlist,
+ .main_nav a,
+ .user a{
+   display: flex;
+   align-items: center;
+ }
+ .playlist{
+   overflow: auto;
+ }
+ .user{
+   margin-top: auto;
+ }
+ .user hr{
+   border: 1px solid #666666;
+   margin: 5px 0;
+ }
+ .user i{
+   color: #666666;
+   margin-right: 10px;
+ }
+ .profile_picture{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: red;
+ }
+ .profile img{
+   width: 30px;
+   height: 30px;
+   margin-top: 5px;
+   border-radius: 50%;
+   background-color: #505050;
+ }
+ /* menu aside media */
+ @media screen and (max-width: 600px){
+   .menu{
+     width: 60px;
+     padding: 10px 10px;
+   }
+   .normal-logo,
+   .playlist_title,
+   .playlist,
+   .menu p,
+   .menu hr{
+     display: none;
+   }
+   .upgrade{
+     left: 60px;
+   }
+   .user a{
+     font-size: 20px;
+     margin: 0 0 20px 5px;
+   }
+   .small-logo{
+     display: block;
+     max-width: 40px;
+   }
+   .upgrade-btn{
+     right:20px;
+   }
+ }

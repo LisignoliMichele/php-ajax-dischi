@@ -1,0 +1,38 @@
+/* tipo */
+h3{
+  color: #fff;
+  text-transform: uppercase;
+  }
+  h2{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  h4{
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .music p{
+    color: #666666;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  section > p{
+    font-weight: 600;
+    color: #666666;
+  }
+  .menu a{
+    color: #666666;
+    font-weight: 600;
+  }
+  .user .profile p{
+    color: #fff;
+  }
+  a{
+    text-decoration: none;
+  }

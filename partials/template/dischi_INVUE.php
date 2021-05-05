@@ -7,7 +7,7 @@
             <option :value="genre" v-for="genre in genres">{{genre}} </option>
          </select>
           <div class="album_music">
-            <a v-for="(disk, index) in filtredAlbums" class="music" @click="albumIndex = index"></i>>
+            <a v-for="(disk, index) in filtredAlbums" class="music" @click="albumIndex = index"></i>
               <div class="album_photo">
                 <img :src="'img/' + disk.poster" alt="album photo">
               </div>

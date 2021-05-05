@@ -1,0 +1,124 @@
+/* gallery */
+.gallery{
+   width: 100%;
+   padding: 100px 20px 0 20px;
+ }
+ section{
+   margin: 50px 0;
+ }
+ .gallery_nav{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .gallery_nav  a{
+   color: #666666;
+   text-transform: uppercase;
+   font-weight: 700;
+   line-height: 30px;
+ }
+ .gallery_nav li{
+   position: relative;
+ }
+ .gallery_nav li:not(:last-child){
+   margin-right: 30px;
+ }
+ .album_music{
+   display: flex;
+   margin-top: 30px;
+  flex-wrap: wrap;
+ }
+ .music{
+   width: calc((100% / 6) - 20px);
+   text-align: center;
+   margin-bottom: 30px;
+ }
+ .music img{
+   width: 100%;
+   display: block;
+   transition: filter .5s;
+ }
+ .music:not(:last-child){
+   margin-right: 20px;
+ }
+ /* gallery effects */
+ .gallery_nav li::after{
+   content: "";
+   display: block;
+   position: absolute;
+   height: 3px;
+   right: calc(50% - 15px);
+   width: 0px;
+   background-color: #00ff55;
+   transition: all .5s;
+ }
+ .gallery_nav li:hover::after{
+   width: 30px;
+ }
+ .gallery_nav li:hover a{
+   color: #ffffff;
+ }
+ .album_photo{
+   position: relative;
+   overflow: hidden;
+   margin-bottom: 5px;
+ }
+ .album_photo::after{
+   font-family: "Font Awesome 5 Free";
+   content: "\f144";
+   color: rgba(255, 255, 255, 0);
+   font-size: 0px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   transition: all .3s;
+ }
+ .music:hover .album_photo::after{
+   color: rgb(255, 255, 255);
+   font-size: 60px;
+ }
+ .music:active .album_photo::after{
+   color: rgba(255, 255, 255, 0);
+   font-size: 200px;
+ }
+ .music:hover .album_photo img{
+   filter: brightness(.3);
+ }
+ /* gallery media */
+ @media screen and (max-width: 1100px) {
+   .album_music{
+     flex-wrap: wrap;
+   }
+   .music{
+     width: calc((100% / 3) - 20px);
+   }
+ }
+ @media screen and (max-width: 700px){
+   .music{
+     width: calc((100% / 2) - 20px);
+   }
+   .gallery_nav{
+     flex-direction: column
+   }
+   .gallery_nav li::after{
+     left: -15px;
+     top: 0;
+     height: 0px;
+     width: 3px;
+   }
+   .gallery_nav li:hover::after{
+     height: 30px;
+     width: 3px;
+ 
+   }
+ }
+ @media screen and (max-width: 500px){
+   .music{
+     width: 100%;
+   }
+   .music:not(:last-child){
+     margin-right: 0;
+   }
+ }
